@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Basic"
+             x:Class="Basic.MainPage">
+    <ContentPage.Content>
+        <StackLayout Padding="10,30,10,10">
+            <Label Text="☏ Enter Phone No."   Font="Bold,20"/>
+            <Entry Text="+91" x:Name="entry_no" Placeholder="☏" Keyboard="Numeric" TextChanged="entry_no_TextChanged" />
+            <Label Text="{Binding lblError}" TextColor="Red" />
+            <Button Text="Call" Clicked="SmsButton_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
