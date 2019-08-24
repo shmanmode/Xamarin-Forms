@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DeviceInfo"
+             x:Class="DeviceInfo.MainPage"
+              >
+    <Grid VerticalOptions="FillAndExpand"
+          Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <!--<RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />-->
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <!--<ColumnDefinition Width="*" />
+            <ColumnDefinition Width="100" />-->
+        </Grid.ColumnDefinitions>
+
+        <Label  Text="ID - "
+               Grid.Column="0"
+               Grid.Row="0"
+               FontSize="20"
+               FontAttributes="Bold"
+                />
+
+        <Label Text="ID"  
+               x:Name="Id"  
+               Grid.Column="1"
+               Grid.Row="0"
+               FontSize="20"
+               FontAttributes="Bold"
+                   
+                     />
+
+        <Label Text="IDIOM - "
+               Grid.Column="0"
+               Grid.Row="2"
+               FontSize="20"
+               FontAttributes="Bold"
+               />
+
+        <Label Text="IDIOM"  
+               x:Name="Idi"  
+               Grid.Column="1"
+               Grid.Row="2"
+               FontSize="20"
+               FontAttributes="Bold" />
+
+        <Label Text="MODEL - "
+               Grid.Column="0"
+               Grid.Row="3"
+               FontSize="20"
+               FontAttributes="Bold"
+              />
+        
+        <Label Text="MODEL"  
+               x:Name="Mdl"
+               Grid.Column="1"
+               Grid.Row="3"
+               FontSize="20"
+               FontAttributes="Bold"/>
+
+        <Label Text="PLATFORM - "
+               Grid.Column="0"              
+               Grid.Row="4"
+               FontSize="20"
+               FontAttributes="Bold"
+              />
+        
+            <Label Text="PLATFORM"  
+                   x:Name="PLF"
+                   Grid.Column="1"
+                   Grid.Row="4"
+                   FontSize="20"             
+                   FontAttributes="Bold"/>
+        
+        <Label  Text="VERSION - "
+                Grid.Column="0"              
+                Grid.Row="5"
+                FontSize="20"
+                FontAttributes="Bold"
+               />
+        
+            <Label Text="VERSION"  
+                   x:Name="Vs"  
+                   Grid.Column="1"
+                   Grid.Row="5"
+                   FontSize="20"              
+                   FontAttributes="Bold"/>
+
+        </Grid>
+</ContentPage>  
